@@ -8,6 +8,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Number Box */
+
 .box {
     margin-top:2rem;
     width: 30rem;
@@ -21,10 +24,49 @@ body {
 .number-box {
     height: 8rem;
     border-bottom: solid 2px;
+    display: flex;
+    justify-content: end;
+    font-size: 5rem;
+    align-items: center;
 }
 
 .number-btn {
     height: 100%;
     background-color: lightblue;
+
+    display: flex;
 }
+
+/* containers */
+.main-container {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.side-container {
+    height: 100%;
+    width: 10rem;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.op {
+    height: 100%;
+    width: fit-content;
+    width: 100%;
+    border: solid 1px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* numbers btn */
+
+
 
