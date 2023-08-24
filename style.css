@@ -13,7 +13,7 @@ body {
 
 .box {
     margin-top:2rem;
-    width: 30rem;
+    width: 31rem;
     height: 80vh;
     border: solid 2px;
     
@@ -41,7 +41,7 @@ body {
 .main-container {
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: white;
 }
 
 .side-container {
@@ -68,5 +68,59 @@ body {
 
 /* numbers btn */
 
+.operator-box {
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+}
+.op-box {
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+    height: 100%;
+
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.nm-box {
+    height: 5.5rem;
+    width: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    background-color:burlywood;
+}
+
+.zero {
+    width: 13rem;
+    border-radius: 5%;
+    margin-left:0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.nine, .eight, .seven {
+    margin-top:0.5rem;
+}
+
+.nine, .six, .three {
+    margin-left: 0.5rem;
+}
 
 
