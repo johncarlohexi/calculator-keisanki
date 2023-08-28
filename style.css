@@ -11,6 +11,10 @@ body {
 
 /* Number Box */
 
+.show-number {
+    overflow:hidden ;
+}
+
 .box {
     margin-top:2rem;
     width: 31rem;
