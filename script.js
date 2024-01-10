@@ -1,42 +1,51 @@
-const opBoxes = document.getElementsByClassName("op-box")
-const nmBoxes = document.getElementsByClassName("nm-box")
-const opBtns = document.getElementsByClassName("op")
-
-let showNumber = document.querySelector(".show-number")
-let stringNum = "";
+const getNames = document.getElementsByClassName("names")
+const getDays = document.getElementsByClassName("namenum")
 
 
-let numbers = {
-    myNum: null,
-    myNum2: null,
-    equalNum: null,
-    toNumber: null
-};
+let people = [
+    { name: "Tanaka", days: 2 },
+    { name: "Hororo", days: 1 },
+    { name: "Pop", days: 10 },
+]
+/*
+getNames[0].innerHTML = people[0].name + ":"
+getNames[1].innerHTML = people[1].name + ":"
+getNames[2].innerHTML = people[2].name + ":" */
+
+function updateNames() {
+    for (let i = 0; i < getNames.length; i++) {
+        (getNames[i]).innerHTML = `${people[i].name}`
+    }
+
+    for (let i = 0; i < getDays.length; i++) {
+        (getDays[i]).innerHTML = `${people[i].days}`
+    }
+}
+updateNames()
+
+const getSalaryCount = document.getElementsByClassName("salary-count")
+const getSalaryNames = document.getElementsByClassName("salary-names");
 
 
-let getNum;
-for (let i = 0; i < nmBoxes.length; i++) {
-    nmBoxes[i].addEventListener("click", function() {
-        getNum = nmBoxes[i].innerHTML;
-        stringNum += getNum
-
-        /// Limit Number
-        if(stringNum.length > 8) stringNum = stringNum.substring(0,8)
-        
-        showNumber.innerHTML = stringNum
-
-        toNumber = parseInt(stringNum)
-        numbers.myNum = toNumber
-        console.log(numbers.myNum)
-    })
-
+function putName() {
+    for (let i = 0; i < getSalaryNames.length; i++) {
+        (getSalaryNames[i]).innerHTML = `${people[i].name}` + ":"
+    }
 
 }
+putName()
 
-for (let i = 0; i < opBtns.length; i++) {
-    opBtns[i].addEventListener("click", function() {
-        let getOperator = opBtns[i].innerHTML
+let perHour = 1250;
 
-        console.log(getOperator)
-    }) 
+function getSalary() {
+    for (let i = 0; i < getDays.length; i++) {
+        getResults = (getDays[i]).innerHTML * perHour
+        console.log(getResults)
+
+        if (i < getSalaryCount.length) {
+            (getSalaryCount[i]).innerHTML = `${getResults}`
+        }
+    }
 }
+
+getSalary()

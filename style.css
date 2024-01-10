@@ -3,128 +3,20 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Number Box */
-
-.show-number {
-    overflow:hidden ;
-}
-
-.box {
-    margin-top:2rem;
-    width: 31rem;
-    height: 80vh;
-    border: solid 2px;
-    
-    display: flex;
+    text-align: center;
     flex-direction: column;
 }
 
-.number-box {
-    height: 8rem;
-    border-bottom: solid 2px;
+.boxes {
     display: flex;
-    justify-content: end;
-    font-size: 5rem;
+    text-align: center;
     align-items: center;
-}
-
-.number-btn {
-    height: 100%;
-    background-color: lightblue;
-
-    display: flex;
-}
-
-/* containers */
-.main-container {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
-.side-container {
-    height: 100%;
-    width: 10rem;
-
-
-    display: flex;
     flex-direction: column;
 }
 
-.op {
-    height: 100%;
-    width: fit-content;
-    width: 100%;
-    border: solid 1px black;
-
+.names {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-
-
-/* numbers btn */
-
-.operator-box {
-    display: flex;
-    justify-content: center;
-    height: 6rem;
-}
-.op-box {
-    width: fit-content;
-    height: 100%;
-    width: 100%;
-    border: solid 1px black;
-    height: 100%;
-
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-container {
-    height: 100%;
-    width: 100%;
-}
-
-.bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-}
-
-.nm-box {
-    height: 5.5rem;
-    width: 7rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
-    background-color:burlywood;
-}
-
-.zero {
-    width: 13rem;
-    border-radius: 5%;
-    margin-left:0.5rem;
-    margin-bottom: 0.3rem;
-}
-
-.nine, .eight, .seven {
-    margin-top:0.5rem;
-}
-
-.nine, .six, .three {
-    margin-left: 0.5rem;
-}
-
-
